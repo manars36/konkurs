@@ -1,5 +1,7 @@
+##TEST
+
 #Zmieñ œcie¿kê do katalogu
-sciezka_do_katalogu <- "C://Users//Michal//Desktop//Prudential"
+sciezka_do_katalogu <- getwd()
 setwd(sciezka_do_katalogu)
 
 #wczytywandoDanych
@@ -51,7 +53,7 @@ p1
 p2<-qplot(Product_Info_1, data=uczacy, xlab="Produkt info 1", ylab="Liczba",fill=Response)
 #tab2 <- table(uczacy$Response,uczacy$Product_Info_1)
 #tab2prop<-prop.table(tab2,2)
-#summary(tab2) - teœcik chi-2 jakby ktoœ chcia³
+#summary(tab2)# - teœcik chi-2 jakby ktoœ chcia³
 #grid.table(round(tab2prop,digits=3),rows=paste("Res",rownames(tab2prop)))
 
 windows()
